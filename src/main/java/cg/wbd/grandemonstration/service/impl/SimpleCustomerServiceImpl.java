@@ -2,6 +2,9 @@ package cg.wbd.grandemonstration.service.impl;
 
 import cg.wbd.grandemonstration.model.Customer;
 import cg.wbd.grandemonstration.service.CustomerService;
+import org.hibernate.HibernateException;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -99,4 +102,5 @@ public class SimpleCustomerServiceImpl implements CustomerService {
         origin.setAddress(customer.getAddress());
         return origin;
     }
+
 }
